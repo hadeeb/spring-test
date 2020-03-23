@@ -3,7 +3,7 @@ $colors: #dd2c00, #ffd600, #00c853, #0091ea, #6200ea, #d50000;
 
 .disc {
   height: 40px;
-  border-radius: 4px;
+  border-radius: 20px;
 }
 
 @for $i from 1 through $cards {
