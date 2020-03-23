@@ -1,0 +1,21 @@
+$cards: 6;
+$colors: #dd2c00, #ffd600, #00c853, #0091ea, #6200ea, #d50000;
+
+.disc {
+  height: 40px;
+  border-radius: 4px;
+}
+
+@for $i from 1 through $cards {
+  .disc-#{$i} {
+    z-index: #{$cards - $i};
+    width: #{30 + $i * 20}px;
+    background-color: nth($list: $colors, $n: $i);
+    box-shadow: 0px
+      0px
+      19px
+      3px
+      darken($color: nth($list: $colors, $n: $i), $amount: 20%)
+      inset;
+  }
+}
