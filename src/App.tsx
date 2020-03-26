@@ -1,4 +1,5 @@
-import React, { useReducer, createRef, useRef } from "react";
+import * as React from "react";
+import { useReducer, createRef, useRef } from "react";
 
 import { Disc, DisabledDisc } from "./disc";
 

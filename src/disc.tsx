@@ -1,4 +1,4 @@
-import React from "react";
+import * as React from "react";
 import { useDrag } from "react-use-gesture";
 import { useSpring, animated } from "react-spring";
 
