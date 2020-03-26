@@ -24,8 +24,8 @@
     to right,
     transparent,
     transparent calc(50% - 7px),
-    #330707 calc(50% - 7px),
-    #752323 calc(50% + 7px),
+    #a6cfd5 calc(50% - 7px),
+    #0d0221 calc(50% + 7px),
     transparent calc(50% + 7px)
   );
 }
