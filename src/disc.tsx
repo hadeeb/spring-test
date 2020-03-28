@@ -1,4 +1,4 @@
-import * as React from "react";
+import * as React from "preact";
 import { useDrag } from "react-use-gesture";
 import { useSpring, animated } from "react-spring";
 
@@ -16,11 +16,7 @@ function Disc({
 }: {
   index: number;
   pole: number;
-  dispatch: React.Dispatch<{
-    item: number;
-    from: number;
-    to: number;
-  }>;
+  dispatch: (action: { item: number; from: number; to: number }) => void;
   parent: React.RefObject<HTMLDivElement>;
 }) {
   const [{ transform }, setSpring] = useSpring(() => initialPosition);
